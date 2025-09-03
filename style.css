@@ -1,0 +1,104 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: #fff;
+}
+
+.left-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* ✅ D와 메뉴 간격 */
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav ul li a {
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #aaa;
+}
+
+.right-menu a {
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.right-menu a:hover {
+  color: #aaa;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url("image/2.png") no-repeat center center/cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 5rem;
+}
+.hero-content {
+  max-width: 600px;
+}
+.small-text {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+.news-tag {
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
